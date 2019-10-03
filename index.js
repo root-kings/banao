@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const inquirer = require('inquirer')
 const fs = require('fs')
 
@@ -49,13 +51,14 @@ function createDirectoryContents(templatePath, newProjectPath) {
 		const stats = fs.statSync(origFilePath)
 
 		if (stats.isFile()) {
-			const contents = fs.readFileSync(origFilePath, 'utf8')
+			// const contents = fs.readFileSync(origFilePath, 'utf8')
 
 			// Rename
 			if (file === '.npmignore') file = '.gitignore'
 
 			const writePath = `${CURR_DIR}/${newProjectPath}/${file}`
-			fs.writeFileSync(writePath, contents, 'utf8')
+			fs.copyFileSync(origFilePath, writePath)
+			// fs.writeFileSync(writePath, contents)
 		} else if (stats.isDirectory()) {
 			fs.mkdirSync(`${CURR_DIR}/${newProjectPath}/${file}`)
 
