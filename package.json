@@ -1,5 +1,5 @@
 {
-	"name": "@root/make",
+	"name": "@root-kings/make",
 	"version": "0.0.1",
 	"description": "Root Kings Project Generator",
 	"main": "index.js",
