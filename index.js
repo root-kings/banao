@@ -55,6 +55,7 @@ function createDirectoryContents(templatePath, newProjectPath) {
 
 			// Rename
 			if (file === '.npmignore') file = '.gitignore'
+			if (file === '.env') file = '.env.local'
 
 			const writePath = `${CURR_DIR}/${newProjectPath}/${file}`
 			fs.copyFileSync(origFilePath, writePath)
