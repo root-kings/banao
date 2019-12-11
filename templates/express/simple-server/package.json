@@ -1,0 +1,25 @@
+{
+	"name": "express-starter-template",
+	"version": "1.0.0",
+	"description": "a express server starter template",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"dev": "nodemon -r dotenv/config server.js"
+	},
+	"author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"moment": "^2.24.0",
+		"mongoose": "^5.4.16",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"dotenv": "^6.2.0",
+		"nodemon": "^2.0.2"
+	}
+}
