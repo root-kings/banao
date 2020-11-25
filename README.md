@@ -1,9 +1,9 @@
-# make
+# banao
 Root Kings Project Generator
 
-Install: `npm install --global @root-kings/make`
+Install: `npm install --global @root-kings/banao`
 
-Usage: `root-make`
+Usage: `banao` or `npx banao`
 
 ## Available Templates
 
