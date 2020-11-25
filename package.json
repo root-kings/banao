@@ -1,6 +1,6 @@
 {
 	"name": "@root-kings/banao",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Root Kings Project Generator",
 	"main": "index.js",
 	"scripts": {
